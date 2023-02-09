@@ -15,7 +15,7 @@ func main() {
 	log.SetFlags(0)
 
 	// Request a greeting message
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("James Bond")
 	if err != nil {
 		log.Fatal(err)
 	}
