@@ -15,10 +15,16 @@ func main() {
 	log.SetFlags(0)
 
 	// Request a greeting message
-	message, err := greetings.Hello("James Bond")
+	// message, err := greetings.Hello("James Bond")
+
+	// A slice of names.
+	names := []string{"James Bond", "Bruce Wayne", "Tony Stark"}
+	messages, err := greetings.Hellos(names)
+
 	if err != nil {
 		log.Fatal(err)
 	}
-	// IF no error was returned, print the returned message to the console
-	fmt.Println(message)
+	// If no error was returned, print the returned message to the console
+	// fmt.Println(message)
+	fmt.Println(messages)
 }
