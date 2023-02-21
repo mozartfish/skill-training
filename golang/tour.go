@@ -8,6 +8,7 @@ import (
 	"time"
 )
 
+// The following code is from the Google Tour of Go tutorial
 type Vertex struct {
 	// X int
 	// Y int
